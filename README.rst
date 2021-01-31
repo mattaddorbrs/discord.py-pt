@@ -109,6 +109,6 @@ Você pode encontrar mais exemplos na pasta exemplos.
 Links
 ------
 
-- `Documentação <https://discordpy-pt.readthedocs.io/en/latest/index.html>`_
+- `Documentação <https://discordpy.readthedocs.io/en/latest/index.html>`_
 - `Servidor oficial do Discord <https://discord.gg/r3sSKJJ>`_
 - `API do Discord <https://discord.gg/discord-api>`_
