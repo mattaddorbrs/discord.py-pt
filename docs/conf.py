@@ -349,3 +349,5 @@ def setup(app):
     app.config.intersphinx_mapping['py'] = ('https://docs.python.org/ja/3', None)
     app.config.html_context['discord_invite'] = 'https://discord.gg/nXzj3dg'
     app.config.resource_links['discord'] = 'https://discord.gg/nXzj3dg'
+  if app.config.language == 'pt':
+    app.config.intersphinx_mapping['py'] = ('https://docs.python.org/pt-br/3', None)

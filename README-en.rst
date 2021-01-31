@@ -11,22 +11,22 @@ discord.py
    :target: https://pypi.python.org/pypi/discord.py
    :alt: PyPI supported Python versions
 
-Uma API wrapper moderna, fácil de usar, rica em funcionalidades, e assíncrona para o Discord, escrita em Python.
+A modern, easy to use, feature-rich, and async ready API wrapper for Discord written in Python.
 
-Funcionalidades
-----------------
+Key Features
+-------------
 
-- API moderna e Pythonica usando a sintaxe ``async`` e ``await``
-- Tratamento adequado de ratelimits.
-- Cobertura de 100% da API suportada do Discord.
-- Otimizado tanto em velocidade quanto memória.
+- Modern Pythonic API using ``async`` and ``await``.
+- Proper rate limit handling.
+- 100% coverage of the supported Discord API.
+- Optimised in both speed and memory.
 
-Instalação
+Installing
 ----------
 
-**Python 3.5.3 ou maior é necessário**
+**Python 3.5.3 or higher is required**
 
-Para instalar a biblioteca sem completo suporte de voz, você pode apenas executar o comando seguinte:
+To install the library without full voice support, you can just run the following command:
 
 .. code:: sh
 
@@ -36,7 +36,7 @@ Para instalar a biblioteca sem completo suporte de voz, você pode apenas execut
     # Windows
     py -3 -m pip install -U discord.py
 
-Caso contrário, para incluir suporte á voz você deverá executar o comando seguinte:
+Otherwise to get voice support you should run the following command:
 
 .. code:: sh
 
@@ -47,7 +47,7 @@ Caso contrário, para incluir suporte á voz você deverá executar o comando se
     py -3 -m pip install -U discord.py[voice]
 
 
-Para instalar a versão de desenvolvimento, faça o seguinte:
+To install the development version, do the following:
 
 .. code:: sh
 
@@ -56,18 +56,18 @@ Para instalar a versão de desenvolvimento, faça o seguinte:
     $ python3 -m pip install -U .[voice]
 
 
-Pacotes opcionais
+Optional Packages
 ~~~~~~~~~~~~~~~~~~
 
-* PyNaCl (para suporte á voz)
+* PyNaCl (for voice support)
 
-Lembre-se que para instalar voz no linux você deve instalar os seguintes pacotes pelo seu gerenciador de pacotes favorito (ex. ``apt``, ``dnf``, etc) antes de executar os comandos abaixo.
+Please note that on Linux installing voice you must install the following packages via your favourite package manager (e.g. ``apt``, ``dnf``, etc) before running the above commands:
 
-* libffi-dev (ou ``libffi-devel`` em alguns sistemas)
-* python-dev (ex. ``python3.6-dev`` para Python 3.6)
+* libffi-dev (or ``libffi-devel`` on some systems)
+* python-dev (e.g. ``python3.6-dev`` for Python 3.6)
 
-Exemplo rápido
----------------
+Quick Example
+--------------
 
 .. code:: py
 
@@ -75,10 +75,10 @@ Exemplo rápido
 
     class MyClient(discord.Client):
         async def on_ready(self):
-            print('Logado como', self.user)
+            print('Logged on as', self.user)
 
         async def on_message(self, message):
-            # não responda a nós mesmos
+            # don't respond to ourselves
             if message.author == self.user:
                 return
 
@@ -88,8 +88,8 @@ Exemplo rápido
     client = MyClient()
     client.run('token')
 
-Exemplo de bot
-~~~~~~~~~~~~~~~~
+Bot Example
+~~~~~~~~~~~~~
 
 .. code:: py
 
@@ -104,11 +104,11 @@ Exemplo de bot
 
     bot.run('token')
 
-Você pode encontrar mais exemplos na pasta exemplos.
+You can find more examples in the examples directory.
 
 Links
 ------
 
-- `Documentação <https://discordpy-pt.readthedocs.io/en/latest/index.html>`_
-- `Servidor oficial do Discord <https://discord.gg/r3sSKJJ>`_
-- `API do Discord <https://discord.gg/discord-api>`_
+- `Documentation <https://discordpy.readthedocs.io/en/latest/index.html>`_
+- `Official Discord Server <https://discord.gg/r3sSKJJ>`_
+- `Discord API <https://discord.gg/discord-api>`_
