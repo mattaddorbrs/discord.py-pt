@@ -2,53 +2,51 @@
 
 .. _intro:
 
-Introduction
+Introdução
 ==============
 
-This is the documentation for discord.py, a library for Python to aid
-in creating applications that utilise the Discord API.
+Essa é a documentação PT-BR para discord.py, uma biblioteca para
+ajudar na criação de Aplicativos que utilizam a API do Discord.
 
-Prerequisites
+Pré-requisitos
 ---------------
 
-discord.py works with Python 3.5.3 or higher. Support for earlier versions of Python
-is not provided. Python 2.7 or lower is not supported. Python 3.4 or lower is not supported
-due to one of the dependencies (:doc:`aiohttp <aio:index>`) not supporting Python 3.4.
-
+A discord.py funciona com o Python 3.5.3 ou versão superior. Suporte para versões antigas do Python
+não é fornecido. Python 2.7 ou versão inferior não é suportada. Python 3.4 ou versão Inferior não é suportada
+por causa que uma das dependências (:doc:`aiohttp <aio:index>`) não ter suporte no Python 3.4.
 
 .. _installing:
 
-Installing
+Instalando
 -----------
 
-You can get the library directly from PyPI: ::
+Para você conseguir instalar direto do PyPi: ::
 
     python3 -m pip install -U discord.py
 
-If you are using Windows, then the following should be used instead: ::
+Se você estiver no Windows, então deverá ser: ::
 
     py -3 -m pip install -U discord.py
 
-
-To get voice support, you should use ``discord.py[voice]`` instead of ``discord.py``, e.g. ::
+Para conseguir o suporte de voz, você deverá usar a ``discord.py[voice]`` em vez da ``discord.py``, exemplo. ::
 
     python3 -m pip install -U discord.py[voice]
 
-On Linux environments, installing voice requires getting the following dependencies:
+Em ambientes derivados do Linux, para instalar o suport de voz você precisa das seguintes dependências:
 
 - `libffi <https://github.com/libffi/libffi>`_
 - `libnacl <https://github.com/saltstack/libnacl>`_
 - `python3-dev <https://packages.debian.org/python3-dev>`_
 
-For a Debian-based system, the following command will get these dependencies:
+Para sistemas baseados em Debian, use o seguinte comando para conseguir as dependências:
 
 .. code-block:: shell
 
     $ apt install libffi-dev libnacl-dev python3-dev
 
-Remember to check your permissions!
+Lembre de checar suas permissões ! Talvez necessite usar o comando como Administrador (``sudo``).
 
-Virtual Environments
+Ambientes Virtuais
 ~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes you want to keep libraries from polluting system installs or use a different version of
