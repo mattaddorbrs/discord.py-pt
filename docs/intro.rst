@@ -13,7 +13,7 @@ Pré-requisitos
 
 A discord.py funciona com o Python 3.5.3 ou versão superior. Suporte para versões antigas do Python
 não é fornecido. Python 2.7 ou versão inferior não é suportada. Python 3.4 ou versão Inferior não é suportada
-por causa que uma das dependências (:doc:`aiohttp <aio:index>`) não ter suporte no Python 3.4.
+por causa que um dos pacotes (:doc:`aiohttp <aio:index>`) não ter suporte no Python 3.4.
 
 .. _installing:
 
@@ -32,13 +32,13 @@ Para conseguir o suporte de voz, você deverá usar a ``discord.py[voice]`` em v
 
     python3 -m pip install -U discord.py[voice]
 
-Em ambientes derivados do Linux, para instalar o suport de voz você precisa das seguintes dependências:
+Em ambientes derivados do Linux, para instalar o suport de voz você precisa dos seguintes pacotes:
 
 - `libffi <https://github.com/libffi/libffi>`_
 - `libnacl <https://github.com/saltstack/libnacl>`_
 - `python3-dev <https://packages.debian.org/python3-dev>`_
 
-Para sistemas baseados em Debian, use o seguinte comando para conseguir as dependências:
+Para sistemas baseados em Debian, use o seguinte comando para conseguir os pacotes:
 
 .. code-block:: shell
 
